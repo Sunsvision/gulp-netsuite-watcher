@@ -1,7 +1,7 @@
-﻿# Gulp Netsuite Watcher
+﻿# Gulp NetSuite Watcher
 
 This tool allows to monitor for local changes on NetSuite project. Any changed file will be uploaded to the file cabinet and deployed automatically (when watch mode is active). Also you can download or upload all or single file using command line.  
-  
+
 Config built using great tool https://github.com/suiteplus/nscabinet
 
 ## Installation

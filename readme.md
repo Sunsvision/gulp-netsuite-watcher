@@ -5,51 +5,37 @@ Config built using great tool https://github.com/suiteplus/nscabinet
 
 ## Installation
 
-1) Install latest npm
+### Actions in your NetSuite account
 
-2) Download https://github.com/suiteplus/nscabinet/blob/master/restlet/nscabinet-restlet.js
-
-3) Sign in to the NetSuite - Customization / Scripting / Scripts / New / RESTlet
-
-4) Name => SCPQ-REST-NScabinet
-
-5) ID => _scpq_rst_nscabinet
-
+1) Download https://github.com/suiteplus/nscabinet/blob/master/restlet/nscabinet-restlet.js
+2) Sign in to the NetSuite
+3) Customization / Scripting / Scripts / New / RESTlet
+4) Name => REST-NScabinet
+5) ID => _rest_nscabinet
 6) Script file / New 
-
-7) File name => SCPQ-REST-NScabinet
-
-8) Folder => SCPQ-RESTlets (from bundle)
-
+7) File name => REST-NScabinet
+8) Folder => RESTlets (from bundle)
 9) Available for suitebundles => check 
-
-10) Select file 
-
+10) Select nscabinet-restlet.js file 
 11) Save
-
 12) Post function => post
-
 13) Save / Deploy Script
-
 14) ID => nscabinet_deployed
-
 15) Roles => Administrator
-
 16) Deployed => check
-
 17) Save
 
-18) In terminal: mkdir project_folder && cd project_folder
+### Local actions
 
-19) In terminal: git clone https://github.com/Sunsvision/gulp-netsuite-watcher.git
+1) Install latest npm
+2) In terminal: git clone https://github.com/Sunsvision/gulp-netsuite-watcher.git
+3) In terminal: cd gulp-netsuite-watcher
+4) In terminal: npm i
+5) Copy all NetSuite file structure 1 in 1 to gulp-netsuite-watcher root folder
+6) Configure connection params to "nsconfig" variable in gulpfile.js file
+7) If you have some project or IDE specific folder or file that should not be loaded to NetSuite file cabinet - add it as exclude to "filesystem" variable in gulpfile.js file (eg. "!node_modules/**" will ignore all node_modules files)
 
-20) In terminal: npm i
-
-21) Copy bundles & all file structure 1 in 1 to filesystem folder
-
-22) Configure connection params in nsconfig var gulpfile.js file
-
-## Using
+## Using it
 
 Run one of the following gulp tasks:
 

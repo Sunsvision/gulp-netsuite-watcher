@@ -28,13 +28,13 @@ Config built using great tool https://github.com/suiteplus/nscabinet
 
 ### Local actions
 
-1) Install latest npm (come with NodeJS https://nodejs.org/)  
-2) In terminal: 
--- git clone https://github.com/Sunsvision/gulp-netsuite-watcher.git  
-3) In terminal: 
--- cd gulp-netsuite-watcher  
-4) In terminal: 
--- npm i  
+1) Install latest npm (come with [NodeJS](https://nodejs.org/))
+2) In terminal:  
+```git clone https://github.com/Sunsvision/gulp-netsuite-watcher.git```  
+3) In terminal:  
+```cd gulp-netsuite-watcher```  
+4) In terminal:  
+```npm i```  
 5) Copy all NetSuite file structure 1 in 1 to gulp-netsuite-watcher root folder  
 6) Configure connection params to "nsconfig" variable in gulpfile.js file  
 7) If you have some project or IDE specific folder or file that should not be loaded to NetSuite file cabinet - add it as exclude to "filesystem" variable in gulpfile.js file (eg. "!node_modules/**" will ignore all node_modules files)  
@@ -43,13 +43,17 @@ Config built using great tool https://github.com/suiteplus/nscabinet
 
 Run one of the following gulp tasks:
 
-* gulp
+gulp  
 > Live mode, without parameters. Will watch for any file changed in filesystem folder and auto upload to NS server - so just run it, start working on your project and your changings will be uploaded to NetSuite filecabinet automatically  
-* gulp download
+
+gulp download  
 > Single execution. Will download all files from NS server filesystem  
-* gulp download --file file_name
+
+gulp download --file file_name  
 > Single execution. Will download selected file from NS server filesystem  
-* gulp upload
+
+gulp upload  
 > Single execution. Will upload all files to NS server  
-* gulp upload --file file_name
+
+gulp upload --file file_name  
 > Single execution. Will upload selected file to NS server  

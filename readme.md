@@ -42,5 +42,5 @@ Run one of the following gulp tasks:
 * gulp: (live mode, without parameters) will watch for any file changed in filesystem folder and auto upload to NS server - so just run it, start working on your project and your changings will be uploaded to NetSuite filecabinet automatically
 * gulp download: (run once) will download all files from NS server filesystem
 * gulp download --file file_name: (run once) will download selected file from NS server filesystem
-* gulp upload: will upload all files to NS server
+* gulp upload: (run once) will upload all files to NS server
 * gulp upload --file file_name: (run once) will upload selected file to NS server

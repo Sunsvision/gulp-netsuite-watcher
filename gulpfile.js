@@ -8,7 +8,7 @@ var nsconfig = {
 	email: 'email@mail.com',
 	password: 'PASSWORD',
 	account: 'YOUR_ID', // your account ID
-	script: 'customscript_scpq_rst_nscabinet', // customscript - auto prefix added by NS
+	script: 'customscript_rest_nscabinet', // customscript - auto prefix added by NS
 	rootPath: '/'
 	// you can specify some more params there or visit https://github.com/suiteplus/nscabinet for more info
 	// realm: 'sandbox.netsuite.com',

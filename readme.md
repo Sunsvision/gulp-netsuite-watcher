@@ -28,7 +28,7 @@ Config built using great tool https://github.com/suiteplus/nscabinet
 
 ### Local actions
 
-1) Install latest npm (come with NodeJS https://nodejs.org/)
+1) Install latest npm (come with NodeJS https://nodejs.org/)  
 2) In terminal: git clone https://github.com/Sunsvision/gulp-netsuite-watcher.git  
 3) In terminal: cd gulp-netsuite-watcher  
 4) In terminal: npm i  
